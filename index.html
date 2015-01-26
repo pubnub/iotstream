@@ -14,6 +14,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <script src="//use.typekit.net/clk3icn.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <script>try{Typekit.load();}catch(e){}</script>
 
   <!-- <script src="http://localhost:35729/livereload.js?snipver=1"></script> -->
@@ -27,11 +28,36 @@
 </head>
 
 <body>
-<div class="wrapper"> 
+<div class="navigation">
+    <a href="#intro"><div class="logo"></div></a>
+    <div class="nav-items pull-left">
+        <a href="#intro">Overview</a>
+        <a href="#info">Why Attend</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#location">Location</a>
+    </div>
+    <div class="ctas pull-right">
+        <a href="#speakers" class="btn btn-secondary">
+            Call for Speakers Open
+        </a>
+
+        <a href="#tickets" class="btn btn-primary register">
+            Register Now
+        </a>
+    </div>
+</div>
+<div class="wrapper">
 <div id="intro" class="introSection container-fluid section" data-stellar-background-ratio="0.5">
+    <div class="video-container">
+
+        <video id="introVideo" poster="/img/poster.png" class="video-hero" autoplay loop="true">
+            <source src="/img/video.webm" type="video/webm">
+        </video>
+
+    </div>
   <div class="row">
     <div class="col-xs-12 text-center">
-      <img class="logoImg" src="img/logo.png" alt="">
+      <img class="logoImg" src="img/logow.png" alt="">
     </div>
     <div class="col-xs-12 text-center introText">
       <h1 class="title hidden">IoT Stream Conference</h1>
@@ -40,6 +66,10 @@
       <div class="introInfo">Bently Reserve, 
       San Francisco</div>
       <div class="introInfo specialPriced"><a href="#tickets">Get specially priced tickets now!</a></div>
+        <br/>
+        <a href="#tickets" class="btn btn-primary register">
+            Register Now
+        </a>
       <div class="premium">
         <div class="madePossible">Made possible with the support of our premium sponsors:</div>
         <a href="http://pubnub.com"><img src="img/pubnub.png" alt="PubNub"></a>
@@ -50,6 +80,7 @@
 </div> <!-- end #intro -->
 
 <div id="info" class="infoSection container-fluid" data-stellar-background-ratio="0.5">
+    <a class="internal" name="why"></a>
   <div class="row">
     <div class="col-md-8 col-md-offset-2"> 
             <header class="sectionHeader text-center">
@@ -93,7 +124,6 @@
       </div>
     </div>
 </div>
-
 <div id="speakers" class="speakersSection" data-stellar-background-ratio="0.5">
     <header class="text-center sectionHeader">Is This Thing On?
     <div class="subheader">Why yes, it is. And some of the most engaging names in the business will be speaking.</div>
@@ -149,7 +179,6 @@
       </div>
    </div>     
 </div>
-
 <div id="location" class="locationSection container-fluid">
   <div class="row">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>

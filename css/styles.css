@@ -1,3 +1,9 @@
+/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 iframe {
   height: 1125px;
 }
@@ -35,19 +41,18 @@ body {
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #444;
   background-color: #000;
-  -webkit-transform: translateZ(0);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-backface-visibility: hidden;
 }
 .wrapper {
+  padding-top:50px;
   overflow-x: hidden;
-  transform: translate(0, 0);
 }
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 h1,
 h2,
@@ -61,13 +66,13 @@ a {
   margin-bottom: 0;
 }
 .container-fluid {
-  width: 100% !important;
   position: relative;
+  width: 100% !important;
 }
 p {
   margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
 }
 .u-allCaps {
   text-transform: uppercase;
@@ -85,10 +90,10 @@ p {
 .col-centered {
   display: inline-block;
   float: none;
-  /* reset the text-align */
-  text-align: left;
   /* inline-block space fix */
   margin-right: -4px;
+  /* reset the text-align */
+  text-align: left;
 }
 .sectionHeader {
   z-index: 99;
@@ -97,8 +102,8 @@ p {
   padding-bottom: 50px;
   font-size: 1.4rem;
   font-weight: 300;
-  text-transform: uppercase;
   color: #fff;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .sectionHeader {
@@ -107,10 +112,10 @@ p {
 }
 .subheader {
   margin-top: .25em;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
-  font-weight: 100;
   font-style: italic;
+  font-weight: 100;
   text-transform: none;
 }
 .has-sectionHeader {
@@ -121,8 +126,9 @@ p {
   padding-bottom: 50px;
   font-size: 1rem;
   background-color: #fff;
-  background-image: url(../img/apartment.jpg);
-  background-size: cover;
+  background-image: none;
+  position:relative;
+  color: white;
 }
 @media (min-width: 768px) {
   .introSection {
@@ -144,10 +150,9 @@ p {
   }
 }
 .introText {
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
   font-style: italic;
-  color: #000;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .introText {
@@ -159,38 +164,37 @@ p {
   font-size: 1.4em;
 }
 .specialPriced {
-  font-weight: 500;
   font-style: italic;
+  font-weight: 500;
 }
 .madePossible {
   margin-top: 2em;
   margin-bottom: 1em;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   font-size: .9em;
-  font-weight: 500;
   font-style: normal;
+  font-weight: 500;
   text-transform: none;
-  color: #444;
 }
 .premium {
   width: 100%;
   margin-left: 0;
+  -webkit-transition: opacity .2s ease-in-out;
+       -o-transition: opacity .2s ease-in-out;
+          transition: opacity .2s ease-in-out;
   -webkit-transform: translateZ(0) scale(1, 1);
+
   -webkit-backface-visibility: hidden;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
 }
 .premium img {
   width: 23%;
+  min-width: 100px;
   height: auto;
   margin: 0 5%;
-  min-width: 100px;
 }
 .premium a:hover {
-  opacity: 0.8;
+  opacity: .8;
+
   -webkit-backface-visibility: hidden;
 }
 @media (min-width: 768px) {
@@ -203,44 +207,43 @@ p {
   }
 }
 .additionalSupportLogo {
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+       -o-transition: opacity .2s ease-in-out;
+          transition: opacity .2s ease-in-out;
+
   -webkit-backface-visibility: hidden;
 }
 .additionalSupportLogo:hover {
-  opacity: 0.8;
+  opacity: .8;
+
   -webkit-backface-visibility: hidden;
 }
 .infoSection {
+  padding-bottom: 50px;
   font-size: 16px;
   color: #fff;
-  padding-bottom: 50px;
   background-color: #000;
   background-image: url(../img/cityStreet.jpg);
-  background-size: cover;
+  -webkit-background-size: cover cover;
+          background-size: cover;
 }
 .infoText {
-  font-size: 1em;
   padding: 0 3%;
+  font-size: 1em;
   text-align: justify;
 }
 @media (min-width: 768px) {
   .infoText {
     padding: 0;
-    font-weight: 100;
     font-size: 1.1em;
+    font-weight: 100;
   }
 }
 .email {
   width: 100%;
   padding: 12px 20px 12px 10px;
-  background-color: #ffffff;
-  border: 1px solid rgba(128, 89, 63, 0.6);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgba(128, 89, 63, .6);
   border-radius: 5px;
 }
 .email:focus {
@@ -254,15 +257,11 @@ p {
   color: #fff;
   background-color: #df6e60;
   border: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   outline: none;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 }
 .subscribeBtn:hover {
   background-color: #d64736;
@@ -274,7 +273,8 @@ p {
 .speakersSection {
   text-align: center;
   background-image: url(../img/microphone.jpg);
-  background-size: cover;
+  -webkit-background-size: cover cover;
+          background-size: cover;
 }
 .speakerList {
   padding: 0 10% 0 10%;
@@ -282,13 +282,13 @@ p {
 }
 .speakerWrap {
   display: inline-block;
-  overflow: hidden;
-  vertical-align: top;
   width: 48%;
   height: auto;
   margin: 10px 1%;
+  overflow: hidden;
   font-size: 1rem;
   text-align: left;
+  vertical-align: top;
   background: rgba(255, 255, 255, 0);
 }
 @media (min-width: 768px) {
@@ -307,34 +307,35 @@ p {
 .speaker {
   position: relative;
   cursor: pointer;
+  -webkit-transition: opacity .2s ease-in-out;
+       -o-transition: opacity .2s ease-in-out;
+          transition: opacity .2s ease-in-out;
   -webkit-transform: translateZ(0) scale(1, 1);
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+
   -webkit-backface-visibility: hidden;
 }
 .speaker:hover {
   opacity: .8;
+
   -webkit-backface-visibility: hidden;
 }
 .speakerImg {
   width: 100%;
   height: auto;
+          filter: grayscale(100%);
+
   -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
 }
 .speaker a:hover {
   text-decoration: none;
 }
 .speakerName {
   display: block;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
   font-style: italic;
+  font-weight: 300;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -343,7 +344,7 @@ p {
   }
 }
 .speakerTitle {
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: #fff;
 }
@@ -352,11 +353,11 @@ p {
 }
 .locationSection .map-overlay {
   position: absolute;
-  z-index: 99;
   top: 250px;
+  z-index: 99;
   padding: 20px;
+  background: rgba(255, 255, 255, .9);
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.9);
 }
 .locationSection .map-overlay a {
   font-style: italic;
@@ -378,10 +379,10 @@ p {
   position: absolute;
   right: 5%;
   bottom: 40px;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-style: italic;
-  text-align: center;
   color: #fff;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .locationAddress {
@@ -390,9 +391,9 @@ p {
   }
 }
 .gm-style .gm-style-iw {
-  text-align: center;
   width: 200px;
   overflow-x: hidden;
+  text-align: center;
 }
 .gm-style .gm-style-iw .content {
   overflow-x: hidden;
@@ -414,15 +415,16 @@ p {
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #fff;
   background-image: url(../img/sf.jpg);
-  background-size: cover;
+  -webkit-background-size: cover cover;
+          background-size: cover;
 }
 .classesSection .singleSession {
   margin-bottom: 50px;
 }
 .classesType {
+  margin-bottom: 20px;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   font-size: 1.6em;
-  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .classesType {
@@ -434,24 +436,26 @@ p {
   font-size: 1rem;
 }
 .sessionSpeakerImgWrap {
-  overflow: hidden;
   height: 100px;
+  overflow: hidden;
 }
 .sessionSpeakerImgWrap img {
+          filter: grayscale(100%);
+
   -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
 }
 .ticketsSection {
   padding: 0 8%;
   background-image: url(../img/columns.jpg);
-  background-size: cover;
+  -webkit-background-size: cover cover;
+          background-size: cover;
 }
 .footerSection {
   padding-top: 20px;
-  text-transform: uppercase;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #fff;
+  text-transform: uppercase;
   background-color: #000;
 }
 @media (min-width: 768px) {
@@ -465,9 +469,9 @@ p {
   }
 }
 .altHeaderSection {
-  background-color: #fff;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
+  background-color: #fff;
 }
 .altHeaderSection a {
   text-decoration: none;
@@ -488,7 +492,7 @@ p {
   text-align: right;
 }
 .altIntroRight .introInfo {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .innerPage {
   color: #fff;
@@ -515,15 +519,13 @@ p {
   position: relative;
   height: auto;
   padding: 20px 10px 20px 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 }
 .scheduleType {
   margin-bottom: 40px;
-  font-family: "chaparral-pro", Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
 .sessionInfo {
@@ -542,10 +544,10 @@ p {
   text-align: right;
 }
 .classThumb img {
-  vertical-align: middle;
   width: 100%;
   height: auto;
   margin-right: 2%;
+  vertical-align: middle;
 }
 .classDescription {
   margin-top: .75em;
@@ -608,8 +610,8 @@ p {
 }
 .sessionSpeaker {
   display: block;
-  font-weight: 400;
   font-style: italic;
+  font-weight: 400;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -644,7 +646,7 @@ p {
     width: 70%;
   }
   .subscribeBtn {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 @media (min-width: 1900px) {
@@ -652,4 +654,85 @@ p {
     font-size: 16px;
   }
 }
-/*# sourceMappingURL=bootstrap-theme.css.map */
+.navigation{
+  height: 50px;
+  background: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav-items{
+  font-size: 16px;
+  padding-top: 14px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.nav-items a {
+  color: black;
+  padding-right: 20px;
+}
+
+a.internal:before {
+  content:"";
+  display:block;
+  height:50px; /* fixed header height*/
+  margin:-50px 0 0; /* negative fixed header height */
+}
+
+.logo{
+  background: url(../img/logoSmall@2x.png) center center no-repeat;
+  background-size: cover;
+  width: 100px;
+  height:50px;
+  float:left;
+}
+
+.ctas{
+  margin-top: 8px;
+  padding-right: 20px;
+}
+
+.ctas div{
+  float: left;
+}
+
+.ctas a{
+  display: block;
+  float: left;
+}
+
+.ctas .btn.btn-secondary {
+  padding: 7px 20px;
+  background: grey;
+  border-radius: 3px;
+  color: white;
+}
+
+.register {
+  padding: 7px 20px;
+  background: #ce1126;
+  border-radius: 3px;
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.video-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.video-container video{
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
