@@ -18,8 +18,9 @@ var introVideo = document.getElementById('introVideo');
 //    introVideo.currentTime = 607;
 //    introVideo.play();
 //})
-
+//
 //introVideo.addEventListener('ended', function () {
+//    console.log("Ended");
 //    this.currentTime = 0;
 //    this.play();
 //}, false);

@@ -655,7 +655,9 @@ p {
   }
 }
 .navigation{
-  height: 50px;
+  height: auto;
+  overflow: auto;
+
   background: white;
   position: fixed;
   top: 0px;
