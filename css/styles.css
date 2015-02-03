@@ -688,9 +688,9 @@ a.internal:before {
 }
 
 .logo{
-  background: url(../img/logoSmall@2x.png) center center no-repeat;
+  background: url(../img/logoSmall2.jpg) center center no-repeat;
   background-size: cover;
-  width: 100px;
+  width: 150px;
   height:50px;
   float:left;
 }
