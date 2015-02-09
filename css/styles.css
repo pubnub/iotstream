@@ -129,10 +129,12 @@ p {
   background-image: none;
   position:relative;
   color: white;
+  overflow-y: hidden;
 }
 @media (min-width: 768px) {
   .introSection {
     padding: 2% 5%;
+
   }
 }
 .logoImg {
@@ -414,7 +416,7 @@ p {
   margin-left: 2%;
 }
 .classesSection {
-  padding: 5% 0;
+  padding: 0 8%;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #fff;
   background-image: url(../img/sf.jpg);
@@ -439,7 +441,7 @@ p {
   font-size: 1rem;
 }
 .sessionSpeakerImgWrap {
-  height: 100px;
+  height: 138px;
   overflow: hidden;
 }
 .sessionSpeakerImgWrap img {
