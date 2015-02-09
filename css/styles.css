@@ -327,6 +327,7 @@ p {
 .speakerImg {
   width: 100%;
   height: auto;
+  min-height: 225px;
           filter: grayscale(100%);
 
   -webkit-filter: grayscale(100%);
