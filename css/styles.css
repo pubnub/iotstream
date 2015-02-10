@@ -744,4 +744,23 @@ a.internal:before {
   min-width: 100%;
 }
 
+.infoText.schedule > div {
+  border-bottom: 1px solid #888;
+  cursor: pointer;
+  padding-right: 10px;
+  font-size: 1.1em;
+}
+
+.infoText.schedule > div:hover{
+  /*opacity: .5;*/
+}
+
+.infoText.schedule > div p {
+  margin: 10px 0px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
