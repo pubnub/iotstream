@@ -327,11 +327,15 @@ p {
 .speakerImg {
   width: 100%;
   height: auto;
-  min-height: 225px;
           filter: grayscale(100%);
 
   -webkit-filter: grayscale(100%);
      -moz-filter: grayscale(100%);
+}
+@media *min-width: 768ps) {
+  .speakerImg {
+    min-height: 225px;
+  }
 }
 .speaker a:hover {
   text-decoration: none;
