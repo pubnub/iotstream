@@ -235,7 +235,7 @@ p {
 .infoText {
   padding: 0 3%;
   font-size: 1em;
-  text-align: justify;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .infoText {
@@ -274,6 +274,7 @@ p {
 .additionalSupportLogo {
   width: 150px;
   height: auto;
+  margin: 1em;
 }
 .speakersSection {
   text-align: center;
