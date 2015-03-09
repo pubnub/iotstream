@@ -229,7 +229,7 @@ p {
   color: #fff;
   background-color: #000;
   background-image: url(../img/cityStreet.jpg);
-  -webkit-background-size: cover cover;
+  -webkit-background-size: cover;
           background-size: cover;
 }
 .infoText {
@@ -252,7 +252,7 @@ p {
   border-radius: 5px;
 }
 .email:focus {
-  border-color: 1px solid #80593f;
+  border: 1px solid #80593f;
   outline: none;
 }
 .subscribeBtn {
@@ -279,7 +279,7 @@ p {
 .speakersSection {
   text-align: center;
   background-image: url(../img/microphone.jpg);
-  -webkit-background-size: cover cover;
+  -webkit-background-size: cover;
           background-size: cover;
 }
 .speakerList {
@@ -329,11 +329,10 @@ p {
   width: 100%;
   height: auto;
           filter: grayscale(100%);
-
   -webkit-filter: grayscale(100%);
      -moz-filter: grayscale(100%);
 }
-@media *min-width: 768ps) {
+@media (min-width: 768px) {
   .speakerImg {
     min-height: 225px;
   }
@@ -426,7 +425,7 @@ p {
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #fff;
   background-image: url(../img/sf.jpg);
-  -webkit-background-size: cover cover;
+  -webkit-background-size: cover;
           background-size: cover;
 }
 .classesSection .singleSession {
@@ -459,7 +458,7 @@ p {
 .ticketsSection {
   padding: 0 8%;
   background-image: url(../img/columns.jpg);
-  -webkit-background-size: cover cover;
+  -webkit-background-size: cover;
           background-size: cover;
 }
 .footerSection {
@@ -742,6 +741,8 @@ a.internal:before {
   height: 100%;
   top: 0px;
   left: 0px;
+  background:url(../img/poster.png);
+  background-size: cover;
 }
 
 .video-container video{
