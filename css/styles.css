@@ -111,13 +111,6 @@ p {
   }
 }
 
-@media only screen
-and (max-device-width : 768px){
-  #introVideo{
-    display: none;
-  }
-}
-
 .subheader {
   margin-top: .25em;
   font-family: 'Montserrat', sans-serif;
