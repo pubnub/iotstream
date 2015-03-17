@@ -775,4 +775,13 @@ a.internal:before {
   margin-bottom: 10px;
 }
 
+#scheduleToggle{
+  color:white;
+  display: inline-block;
+  padding: 20px;
+  background: #ce1126;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=styles.css.map */
