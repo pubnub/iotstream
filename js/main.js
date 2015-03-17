@@ -10,3 +10,8 @@ $(".schedule > div").click(function(){
     $(this).children(".description").removeClass("hidden");
 });
 
+scheduleToggle
+
+$("#scheduleToggle").click(function(){
+    $("#theSchedule").toggleClass("hidden");
+});

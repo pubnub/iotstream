@@ -53,7 +53,7 @@ body {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}4
+}
 h1,
 h2,
 h3,
@@ -537,7 +537,7 @@ p {
 .scheduleType {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .sessionInfo {
   float: left;
@@ -546,7 +546,7 @@ p {
 .sessionTime,
 .classThumb {
   width: 30%;
-  font-size: .85em;
+  font-size: 1rem;
   text-align: right;
 }
 .classThumb {
@@ -615,6 +615,7 @@ p {
 .moreSessionInfo {
   position: relative;
   padding-top: 1em;
+  font-size: 1rem;
 }
 .sessionsSection .titleTypeLocation {
   width: 100%;
@@ -639,7 +640,7 @@ p {
     width: 10%;
   }
   .sessionTitle {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
@@ -664,6 +665,10 @@ p {
   html {
     font-size: 16px;
   }
+}
+
+.typeLocation{
+  font-size: .85rem;
 }
 .navigation{
   height: auto;
