@@ -34,6 +34,7 @@ iframe {
 }
 html {
   font-size: 12px;
+  overflow-x: hidden;
 }
 body {
   max-width: 1920px;
@@ -279,7 +280,7 @@ p {
 }
 .speakersSection {
   text-align: center;
-  background-image: url(../img/microphone.jpg);
+  background: #000;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -335,7 +336,7 @@ p {
 }
 @media (min-width: 768px) {
   .speakerImg {
-    min-height: 225px;
+    /* min-height: 225px; */
   }
 }
 .speaker a:hover {
