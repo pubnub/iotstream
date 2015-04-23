@@ -5,16 +5,16 @@
  */
 
 iframe {
-  height: 1125px;
+  height: 725px;
 }
 @media (min-width: 480px) {
   iframe {
-    height: 800px;
+    height: 600px;
   }
 }
 @media (min-width: 768px) {
   iframe {
-    height: 550px;
+    height: 450px;
   }
 }
 @media (min-width: 992px) {
@@ -24,7 +24,7 @@ iframe {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   iframe {
-    height: 800px;
+    height: 700px;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
@@ -36,12 +36,13 @@ html {
   font-size: 12px;
   overflow-x: hidden;
 }
+
 body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   color: #444;
-  background-color: #000;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-backface-visibility: hidden;
@@ -124,41 +125,40 @@ p {
   padding-top: 175px;
 }
 .introSection {
-  padding-top: 100px;
-  padding-bottom: 50px;
+/*  padding-top: 100px;
+*/  padding-bottom: 50px;
   font-size: 1rem;
   background-color: #fff;
   background-image: none;
   position:relative;
-  color: white;
+  color: #000;
   overflow-y: hidden;
 }
 @media (min-width: 768px) {
   .introSection {
-    padding: 2% 5%;
+    padding: 0% 5%;
 
   }
 }
 .logoImg {
-  width: 25%;
+  width: 45%;
   margin-right: -28px;
   height: auto;
 }
 @media (min-width: 768px) {
   .logoImg {
-    width: 25%;
+    width: 15%;
     margin-right: -28px;
   }
 }
 @media (min-width: 992px) {
   .logoImg {
-    width: 25%;
+    width: 15%;
     margin-right: -28px;
   }
 }
 .introText {
   font-family: 'Montserrat', sans-serif;
-  font-style: italic;
   font-weight: 300;
 }
 @media (min-width: 768px) {
@@ -167,15 +167,15 @@ p {
   }
 }
 .introInfo {
-  margin-top: 35px;
-  font-size: 1.4em;
+  margin-top: 15px;
+  font-size: 1em;
 }
 .specialPriced {
   font-style: italic;
   font-weight: 500;
 }
 .madePossible {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   font-family: 'franklin-gothic-urw', 'helvetica neue', helvetica, arial, sans-serif;
   font-size: .9em;
@@ -194,7 +194,7 @@ p {
   -webkit-backface-visibility: hidden;
 }
 .premium img {
-  width: 23%;
+  width: 15%;
   min-width: 100px;
   height: auto;
   margin: 0 5%;
@@ -210,7 +210,7 @@ p {
     margin-left: 10%;
   }
   .premium img {
-    width: 18%;
+    width: 15%;
   }
 }
 .additionalSupportLogo {
@@ -520,9 +520,10 @@ p {
   }
 }
 .innerHeader {
-  margin-bottom: 50px;
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 .scheduleDay {
   margin-bottom: 50px;
@@ -539,6 +540,7 @@ p {
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
+  text-align: center;
 }
 .sessionInfo {
   float: left;
@@ -549,6 +551,7 @@ p {
   width: 30%;
   font-size: 1rem;
   text-align: right;
+  padding-right: 5%;
 }
 .classThumb {
   width: 30%;
@@ -595,7 +598,7 @@ p {
 }
 @media (min-width: 992px) {
   .titleTypeLocation {
-    width: 70%;
+    width: 80%;
   }
 }
 .sessionTitle {
@@ -639,6 +642,7 @@ p {
   }
   .sessionTime {
     width: 10%;
+    padding-right: 0%
   }
   .sessionTitle {
     font-size: 1rem;
@@ -676,13 +680,15 @@ p {
   overflow: auto;
 
   background: white;
-  position: fixed;
-  top: 0px;
+/*  position: fixed;
+*/  top: 0px;
   left: 0px;
   right: 0px;
   z-index: 1000;
   max-width: 1920px;
   margin: 0 auto;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .nav-items{
